@@ -1,0 +1,46 @@
+decimal solde = 1000m;
+decimal montant = 200m;
+
+if (montant > 0)
+{
+    solde += montant;
+}
+else if (montant < 0)
+{
+    decimal debit = -montant;
+
+    if (debit <= solde)
+    {
+        solde -= debit;
+    }
+    else
+    {
+        Console.WriteLine("Solde insuffisant");
+    }
+}
+//exo2
+/*decimal Crediter( decimal montant, decimal solde)
+{
+if (montant > 0)
+{
+    solde += montant;
+}
+else
+{
+    Console.WriteLine("erreur montant");
+}
+}
+
+decimal Debiter(decimal montant)
+{
+    return montant;
+}*/
+
+Console.WriteLine($"Solde : {solde} ");
+/*Console.WriteLine($"Crédit : {solde} ");
+Console.WriteLine($"Débit : {solde} ");
+
+Crediter(1000m);
+Debiter(100m);*/
+
+//Console.WriteLine();
