@@ -1,0 +1,25 @@
+public class Produit
+{
+    public string Reference {get;}
+    public string Nom {get; set;}
+    public decimal Prix {get;}
+    public int qté_Stock {get; private set;}
+
+ public class Produit(string reference, string nom, decimal prix, int stock)
+    {
+        Reference = reference;
+        Nom = nom;
+        Prix = prix;
+        qté_Stock = stock;
+    }
+
+    
+}
+if ()
+{
+    Console.WriteLine("Il n'y a pas de référence pour créer un produit");
+}
+else if (prix < 0)
+{
+     Console.WriteLine("Erreur prix");
+}

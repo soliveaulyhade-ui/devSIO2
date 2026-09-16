@@ -1,0 +1,15 @@
+public class Compte
+{
+ public Compte(int numero, string titulaire, decimal solde)
+    {
+        Numero = numero;
+        Titulaire = titulaire;
+        solde = solde;
+
+    }
+}
+
+var compte = new Compte(1, "Marco", 50m);
+var compte = new Compte(2, "Paulo", 150m);
+
+Console.WriteLine();
