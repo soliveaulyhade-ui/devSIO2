@@ -1,0 +1,9 @@
+@model List<MvcFilms.Models.Film>
+
+<h1>Liste des films</h1>
+<ul>
+@foreach (var film in Model)
+{
+    <li>@film.Titre - @film.Réalisateur - (@film.Annee)</li>
+}
+</ul>
