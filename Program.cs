@@ -1,11 +1,21 @@
-﻿Produit produit = new Produit
+﻿using System.Net.Mail;
+
+var produit = new Produit
 {
     Nom = "téléphone",
     Prix = 300m
 };
 
-produit.Afficher();
 
+
+var client = new Client
+{
+    Nom = "Alice",
+    Email = "alice@example.com"
+};
+
+produit.Afficher();
+client.Afficher();
 
 //"téléphone -", 300m
 //Console.WriteLine("Hello, World!");
